@@ -5,6 +5,7 @@
 
 body {
   font-family: system-ui;
+  min-height: 100vh;
 }
 
 .color {
