@@ -410,10 +410,10 @@ textarea {
   }
 
   .bottom-left {
-    align-items: center;
+    align-items: center !important;
   }
 
   .des {
-    text-align: center;
+    text-align: center !important;
   }
 }
