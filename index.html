@@ -1,411 +1,223 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: system-ui;
-  min-height: 100vh;
-}
-
-.color {
-  background-color: #f7e9fd;
-}
-
-.navbar {
-  margin-left: 80px;
-  padding-top: 60px;
-  font-size: 25px;
-}
-
-.navbar span {
-  color: #e37eff;
-  font-size: 32px;
-}
-
-.description span {
-  color: #e173ff;
-  margin-left: 30px;
-}
-
-.description {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 50px;
-  margin-top: 40px;
-  margin-bottom: 20px;
-  letter-spacing: 1px;
-  font-weight: 500;
-}
-
-.description span {
-  background: -webkit-linear-gradient(
-    18deg,
-    #3752d6 36.46%,
-    #5835b2 68.62%,
-    #ffeb3a 50%,
-    #cc18c6 10%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.grids {
-  padding: 20px;
-  margin-left: 40px;
-}
-
-.grid {
-  display: flex;
-  margin: 20px;
-  gap: 20px;
-  width: 58vw;
-}
-
-.grid-one {
-  background-color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 16px;
-  padding: 40px 30px;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-}
-
-.grid-one img {
-  width: 100px;
-}
-
-.first {
-  font-size: 18px;
-  width: 12vw;
-  font-weight: 500;
-}
-
-.second {
-  font-size: 16px;
-  font-weight: 600;
-}
-
-.grid-one-inner {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 16px;
-}
-
-.right {
-  background-color: #0b1d39;
-  width: 100px;
-  height: 100px;
-  border-radius: 16px;
-}
-
-.middle {
-  display: flex;
-  background-color: #f7e9fd;
-}
-
-.right {
-  margin-top: 50px;
-  width: 435px;
-  height: 830px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: white;
-}
-
-.inputs {
-  margin-top: 35px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 30px;
-}
-
-.right input {
-  width: 360px;
-  height: 55px;
-  padding: 2px;
-  padding-left: 12px;
-  border-radius: 5px;
-  border: none;
-}
-
-::placeholder {
-  font-size: 18px;
-  color: black;
-  font-weight: bold;
-  font-family: system-ui;
-}
-
-.demo {
-  height: 110px !important;
-}
-
-.right p {
-  margin-top: 30px;
-  font-size: 28px;
-  text-align: center;
-  width: 335px;
-}
-
-textarea {
-  padding-top: 16px;
-  padding-left: 12px;
-  border-radius: 5px;
-  border: none;
-}
-
-.right button {
-  cursor: pointer;
-  border: none;
-  color: white;
-  padding: 20px 40px;
-  border-radius: 5px;
-  font-size: 18px;
-  background: linear-gradient(
-    286.95deg,
-    #b661bf 36.46%,
-    #977edc 68.62%,
-    #45a3e5 100%
-  );
-}
-
-.bottom {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.bottom-left {
-  width: 600px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 30px;
-  margin-left: 70px;
-  margin-top: 30px;
-}
-
-.des {
-  font-size: 28px;
-  letter-spacing: 0.8px;
-}
-
-.anymore {
-  font-size: 26px;
-}
-
-.bottom-right {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-right: 50px;
-  margin-top: 150px;
-}
-
-.bottom-right img {
-  width: 200px;
-}
-
-.bottom-name {
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  padding: 30px 20px;
-  border-radius: 10px;
-}
-
-.name-first {
-  font-size: 32px;
-  font-weight: 500;
-}
-
-.name-second {
-  font-size: 18px;
-  font-weight: 600;
-}
-
-.line {
-  position: absolute;
-  right: 441px;
-  width: 51%;
-  height: 1px;
-  background-color: #afafaf;
-  margin-top: 364px;
-}
-
-.footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  margin-top: 50px;
-  background-color: #f8fafc;
-  padding-top: 80px;
-  padding-bottom: 80px;
-}
-
-.footer p {
-  font-size: 50px;
-  margin-bottom: 60px;
-  font-weight: 500;
-}
-
-.logo-collection {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.coll-one {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 90px;
-}
-
-.coll-one img {
-  width: 120px;
-  height: 80px;
-  object-fit: cover;
-}
-
-@media (max-width: 1300px) {  
-  .middle {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .grids {
-    margin-left: 0;
-  }
-
-  .grid {
-    width: 780px;
-  }
-
-  .first {
-    width: auto;
-  }
-
-  .description {
-    flex-direction: column;
-    font-size: 45px;
-  }
-
-  .description span {
-    margin-left: 0;
-  }
-
-  .bottom {
-    flex-direction: column;
-  }
-
-  .bottom-right {
-    margin-right: 0;
-    margin-top: 50px;
-  }
-
-  .bottom-left {
-    margin-left: 0;
-    margin-top: 50px;
-  }
-
-  .coll-one {
-    flex-direction: column;
-    gap: 0;
-  }
-
-  .line {
-    display: none;
-  }
-
-  .right {
-    margin-bottom: 30px;
-  }
-}
-
-@media (max-width: 800px) {  
-  .grid {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 400px;
-  }
-
-  .description {
-    font-size: 40px;
-  }
-
-  .navbar {
-    margin-left: 20px;
-  }
-
-  .bottom-left {
-    width: 450px;
-  }
-
-  .bottom-left p {
-    font-size: 24px;
-  }
-
-  .bottom-left img {
-    width: 100px;
-  }
-
-  .footer p {
-    font-size: 35px;
-    margin-left: 10px;
-  }
-}
-
-@media (max-width: 1300px) {
- .middle {
-  height: auto !important;
- }
- 
- .bottom {
-  margin-top: 0 !important;
- }
-}
-
-.bottom {
-  margin-top: 100px;
-}
-
-.middle {
-  height: 800px;
-}
-
-@media (max-width: 600px) {
-  .description {
-    font-size: 35px;
-  }
-
-  .grid {
-    width: 360px;
-  }
-
-  .right {
-    width: 400px;
-  }
-
-  .right input {
-    width: 320px;
-    height: 50px;
-  }
-
-  .bottom-left {
-    width: 400px;
-  }
-
-  .footer p {
-    text-align: center;
-  }
-}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+
+    <div class="home">
+      <div class="color">
+      <div class="navbar">
+        <h1>elevate<span>HQ</span></h1>
+      </div>
+
+      <div class="description">
+        <h4>Walk through your next</h4><span>commissions HQ</span>
+      </div>
+
+      <div class="middle">
+        <div class="left">
+          <div class="grids">
+            <div class="grid">
+              <div class="grid-one">
+                <div class="grid-one-inner">
+                  <p class="first">Automate the most complex of plans</p>
+                  <p class="second">
+                    Whatever your structure, ElevateHQ will automate
+                    calculations
+                  </p>
+                </div>
+                <img
+                  src="https://cdn-icons-png.flaticon.com/128/8727/8727626.png"
+                  alt=""
+                />
+              </div>
+
+              <div class="grid-one">
+                <div class="grid-one-inner">
+                  <p class="first">Automate the most complex of plans</p>
+                  <p class="second">
+                    Whatever your structure, ElevateHQ will automate
+                    calculations
+                  </p>
+                </div>
+                <img
+                  src="https://cdn-icons-png.flaticon.com/128/8727/8727626.png"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div class="grid">
+              <div class="grid-one">
+                <div class="grid-one-inner">
+                  <p class="first">Automate the most complex of plans</p>
+                  <p class="second">
+                    Whatever your structure, ElevateHQ will automate
+                    calculations
+                  </p>
+                </div>
+                <img
+                  src="https://cdn-icons-png.flaticon.com/128/8727/8727626.png"
+                  alt=""
+                />
+              </div>
+
+              <div class="grid-one">
+                <div class="grid-one-inner">
+                  <p class="first">Automate the most complex of plans</p>
+                  <p class="second">
+                    Whatever your structure, ElevateHQ will automate
+                    calculations
+                  </p>
+                </div>
+                <img
+                  src="https://cdn-icons-png.flaticon.com/128/8727/8727626.png"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div class="grid">
+              <div class="grid-one">
+                <div class="grid-one-inner">
+                  <p class="first">Automate the most complex of plans</p>
+                  <p class="second">
+                    Whatever your structure, ElevateHQ will automate
+                    calculations
+                  </p>
+                </div>
+                <img
+                  src="https://cdn-icons-png.flaticon.com/128/8727/8727626.png"
+                  alt=""
+                />
+              </div>
+
+              <div class="grid-one">
+                <div class="grid-one-inner">
+                  <p class="first">Automate the most complex of plans</p>
+                  <p class="second">
+                    Whatever your structure, ElevateHQ will automate
+                    calculations
+                  </p>
+                </div>
+                <img
+                  src="https://cdn-icons-png.flaticon.com/128/8727/8727626.png"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div class="grid">
+              <div class="grid-one">
+                <div class="grid-one-inner">
+                  <p class="first">Automate the most complex of plans</p>
+                  <p class="second">
+                    Whatever your structure, ElevateHQ will automate
+                    calculations
+                  </p>
+                </div>
+                <img
+                  src="https://cdn-icons-png.flaticon.com/128/8727/8727626.png"
+                  alt=""
+                />
+              </div>
+
+              <div class="grid-one">
+                <div class="grid-one-inner">
+                  <p class="first">Automate the most complex of plans</p>
+                  <p class="second">
+                    Whatever your structure, ElevateHQ will automate
+                    calculations
+                  </p>
+                </div>
+                <img
+                  src="https://cdn-icons-png.flaticon.com/128/8727/8727626.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="right">
+          <p>Tell us about yourself and we'll get back to you shortly</p>
+          <div class="inputs">
+            <input type="text" placeholder="First Name" />
+            <input type="text" placeholder="Last Name" />
+            <input type="text" placeholder="Business Email" />
+            <input type="text" placeholder="Company Name" />
+            <input type="text" placeholder="Phone Number" />
+            <textarea
+              class="demo"
+              type="text"
+              rows="5"
+              cols="43"
+              placeholder="Anything else that you would expect from us in the demo?"
+            ></textarea>
+            <button>BOOK MY SLOT</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <div class="bottom">
+        <div class="bottom-left">
+          <img
+            src="https://cdn-icons-png.flaticon.com/128/9755/9755576.png"
+            alt=""
+          />
+          <p class="des">
+            We do commissions quartely and all I can describe it is that it is
+            that it is my least favourite meeting of the quarter - and i do
+            attend some shitty mettings.
+          </p>
+          <p class="anymore">Not anymore"</p>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="bottom-right">
+          <img
+            src="https://cdn-icons-png.flaticon.com/128/2202/2202112.png"
+            alt=""
+          />
+          <div class="bottom-name">
+            <p class="name-first">Mark Truman</p>
+            <p class="name-second">Revenue leader and executive, EdgePetrol</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <p>Killing commission sour tastes at</p>
+        <div class="logo-collection">
+          <div class="coll-one">
+            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968269.png" alt="" />
+            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968269.png" alt="" />
+            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968269.png" alt="" />
+            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968269.png" alt="" />
+            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968269.png" alt="" />
+            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968269.png" alt="" />
+          </div>
+
+          <div class="coll-one">
+            <img src="https://cdn-icons-png.flaticon.com/128/196/196566.png" alt="" />
+            <img src="https://cdn-icons-png.flaticon.com/128/196/196566.png" alt="" />
+            <img src="https://cdn-icons-png.flaticon.com/128/196/196566.png" alt="" />
+            <img src="https://cdn-icons-png.flaticon.com/128/196/196566.png" alt="" />
+            <img src="https://cdn-icons-png.flaticon.com/128/196/196566.png" alt="" />
+            <img src="https://cdn-icons-png.flaticon.com/128/196/196566.png" alt="" />
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </body>
+</html>
