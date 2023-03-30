@@ -10,6 +10,7 @@ body {
 
 .color {
   background-color: #f7e9fd;
+  min-width: 100vw;
 }
 
 .navbar {
@@ -423,9 +424,5 @@ textarea {
 
   .des {
     text-align: center !important;
-  }
-
-  .color {
-    min-width: 100vw !important;
   }
 }
