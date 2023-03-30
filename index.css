@@ -424,4 +424,8 @@ textarea {
   .des {
     text-align: center !important;
   }
+
+  .color {
+    min-width: 100vw;
+  }
 }
