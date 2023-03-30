@@ -408,4 +408,12 @@ textarea {
   .footer p {
     text-align: center;
   }
+
+  .bottom-left {
+    align-items: center;
+  }
+
+  .des {
+    text-align: center;
+  }
 }
