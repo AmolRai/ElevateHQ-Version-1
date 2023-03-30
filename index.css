@@ -330,7 +330,7 @@ textarea {
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 800px) {  
   .grid {
     display: flex;
     align-items: center;
@@ -381,4 +381,31 @@ textarea {
 
 .middle {
   height: 800px;
+}
+
+@media (max-width: 600px) {
+  .description {
+    font-size: 35px;
+  }
+
+  .grid {
+    width: 360px;
+  }
+
+  .right {
+    width: 400px;
+  }
+
+  .right input {
+    width: 320px;
+    height: 50px;
+  }
+
+  .bottom-left {
+    width: 400px;
+  }
+
+  .footer p {
+    text-align: center;
+  }
 }
